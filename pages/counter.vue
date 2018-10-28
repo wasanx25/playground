@@ -1,6 +1,8 @@
 <template>
   <div>
-    <button @click="$store.commit('counter/increment')">{{ counter }}</button>
+    <button @click="$store.commit('counter/decrement')" class="waves-effect waves-light btn">-</button>
+    <p>{{ counter }}</p>
+    <button @click="$store.commit('counter/increment')" class="waves-effect waves-light btn">+</button>
   </div>
 </template>
 
