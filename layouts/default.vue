@@ -1,7 +1,9 @@
 <template>
   <div>
-    <div id="header" class="container">
-      <h1>wasanx25 playground</h1>
+    <div id="header">
+      <div class="container">
+        <h1>wasanx25 playground</h1>
+      </div>
     </div>
     <div id="main" class="container">
       <nuxt/>
@@ -13,8 +15,21 @@
 </template>
 
 <style>
+body {
+  background-color: #4db6ac;
+}
+
 #header {
-  text-align: center;
+  background-color: #212121;
+}
+
+#header .container {
+  padding: 12px 0;
+}
+
+#header h1 {
+  margin: 0;
+  font-size: 1.8rem;
 }
 
 #main {
