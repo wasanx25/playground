@@ -30,6 +30,7 @@ body {
 #header h1 {
   margin: 0;
   font-size: 1.8rem;
+  color: #efefef;
 }
 
 #main {
