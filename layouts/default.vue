@@ -10,8 +10,10 @@
         <nuxt/>
       </div>
     </div>
-    <div id="footer" class="container">
-      <p>Copyright © 2018 wasanx25 All Right Reserved.</p>
+    <div id="footer">
+      <div class="container">
+        <p>Copyright © 2018 wasanx25 All Right Reserved.</p>
+      </div>
     </div>
   </div>
 </template>
@@ -45,6 +47,6 @@ body {
 }
 
 #footer p {
-  color: #9e9e9e;
+  color: #efefef;
 }
 </style>
