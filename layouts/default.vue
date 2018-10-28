@@ -5,8 +5,10 @@
         <h1>wasanx25 playground</h1>
       </div>
     </div>
-    <div id="main" class="container">
-      <nuxt/>
+    <div id="main">
+      <div class="container">
+        <nuxt/>
+      </div>
     </div>
     <div id="footer" class="container">
       <p>Copyright © 2018 wasanx25 All Right Reserved.</p>
@@ -21,6 +23,7 @@ body {
 
 #header {
   background-color: #212121;
+  margin: 0 0 3rem;
 }
 
 #header .container {
