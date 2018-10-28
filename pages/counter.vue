@@ -1,8 +1,10 @@
 <template>
   <div id="counter_content">
+    <button @click="$store.commit('counter/minusTen')" class="waves-effect waves-light btn">-10</button>
     <button @click="$store.commit('counter/decrement')" class="waves-effect waves-light btn">-</button>
     <p>{{ counter }}</p>
     <button @click="$store.commit('counter/increment')" class="waves-effect waves-light btn">+</button>
+    <button @click="$store.commit('counter/plusTen')" class="waves-effect waves-light btn">+10</button>
     <button id="reset" @click="$store.commit('counter/reset')" class="waves-effect waves-light btn-small blue-grey lighten-3">Reset</button>
   </div>
 </template>

@@ -11,5 +11,11 @@ export const mutations = {
   },
   reset(state) {
     state.counter = 0
+  },
+  plusTen(state) {
+    state.counter += 10
+  },
+  minusTen(state) {
+    state.counter -= 10
   }
 }
