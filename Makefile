@@ -1,5 +1,5 @@
 build:
-	npm run build
+	npm run generate
 	mkdir -p functions
 	go get ./...
 	go build -o functions/hello ./...
