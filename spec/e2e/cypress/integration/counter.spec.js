@@ -1,6 +1,6 @@
 describe('/counter', () => {
   beforeEach(() => {
-    cy.visit('http://localhost:3000/counter')
+    cy.visit(Cypress.env('DEV_TEST_URL') + '/counter')
   })
 
   it('increments counter and resets', () => {
