@@ -7,3 +7,8 @@ before_install:
   - google-chrome-stable --headless --disable-gpu --remote-debugging-port=9222 http://localhost &
 install: npm install
 script: npm run cypress:run:chrome
+notifications:
+  slack:
+    secure: uQqeMimulVI0bn6+7RLUV6Kz/0gsWCjZBN1//dlYK2LnE3C2WYdkSsl3aQb7MrvteBqkq6E8HowR0VBf0Tv57hi091cvxkADLksU8AC4QA0pu6SvkoZd6nDzWSchn3EOulPvUWPt0J2cwF9Qdc88mUdW8lshxozxXSxBgYmRLqG2xKrt3qWYlnmqWtIGF0iwmjypoeoWGPy6I7dF2fk8TOPQye0th+j6z9ZCjB6LiZXOaEBo+hHHSH0xM296vGIlZSv5WstunUye4vAR+14mEWyBI1PFAdNOx1wAAQEmSCHtSBkjhZ09z/Xlk84kYOlRd753oIEcKuW9ZK/stkwF2vY+MtmZfj5qIDhCHqHMRdhp4rO8fG9P6fLmSa1R0dMZaJYABD7DJjHmKgvgwzhvD0TqURUuJL6fx1pfsXYerA5FshAlXQLTfteaWel+SB6Ia6sThpGQWxtiJbjSHbNubsq/3RnG4PKzAAkDUIIFxkK1O8Rc5BSfsAy0iuJiXJcAQPmQ/n2o+R3hqJ7Vh4K9Ytrkv8gIwEXZQGVyPN8GJpm2szFfuXEZcpOwPyBKWVa+JrDlTyfDCxSJYzYcm3DY6+pa0kvYTS2SEgwUXaJQD/sfnJ5i/gvHe4VtJMY/IA5Xe4/dp+v0NXVBdOWGmM52l8V+5ub34Q8ufDYGMpF4w2o=
+  on_success: always
+  on_failed: always
