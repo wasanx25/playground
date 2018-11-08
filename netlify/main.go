@@ -12,8 +12,12 @@ import (
 
 func handler(request events.APIGatewayProxyRequest) {
 	client := travis.NewClient(travis.ApiOrgUrl, os.Getenv("TRAVIS_TOKEN"))
+	branch := os.Getenv("BRANCH")
+	if branch == "" {
+		branch = "master"
+	}
 	req := &travis.RequestBody{
-		Branch: "master",
+		Branch: branch,
 		Config: map[string]map[string]string{
 			"env": map[string]string{
 				"CYPRESS_baseUrl":      os.Getenv("URL"),
