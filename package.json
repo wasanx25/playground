@@ -16,10 +16,10 @@
     "cypress:open": "cypress open -P spec/e2e"
   },
   "dependencies": {
-    "nuxt": "^2.0.0"
+    "nuxt": "^2.10.0"
   },
   "devDependencies": {
-    "babel-eslint": "^10.0.2",
+    "babel-eslint": "^10.0.3",
     "cypress": "^3.4.1",
     "eslint": "^4.19.1",
     "eslint-friendly-formatter": "^4.0.1",
